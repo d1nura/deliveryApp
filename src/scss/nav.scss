@@ -1,0 +1,36 @@
+#mainNav {
+  // border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  // flex-direction: column;
+  // width: 18vw;
+  a {
+    // border: 1px solid red;
+    // font-family: "Comfortaa", cursive;
+    width: 17vw;
+    letter-spacing: 0.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    margin: 1vh 0 1vh 0;
+    padding: 3vh;
+    border-radius: 0.4rem;
+    color: rgb(82, 82, 82);
+    // &:nth-child(1) {
+    //   margin-top: 0vh;
+    // }
+    background: rgb(245, 245, 245);
+    font-weight: bold;
+    transition: 0.2s;
+    &:hover {
+      background: rgb(203, 139, 255);
+      color: white;
+    }
+
+    img {
+      width: 2.5vw;
+    }
+  }
+}

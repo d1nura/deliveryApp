@@ -1,0 +1,7 @@
+.home {
+  //   border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  // grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1.4vw;
+}

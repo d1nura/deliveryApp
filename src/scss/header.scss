@@ -1,0 +1,43 @@
+header {
+  position: relative;
+  width: 100%;
+  height: 14vh;
+  //   border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  form {
+    // border: 1px solid red;
+    width: auto;
+    background: rgb(248, 248, 248);
+    display: flex;
+    align-items: center;
+    border-radius: 0.4rem;
+    padding: 0 1vw 0 1vw;
+    img {
+      width: 1.6vw;
+    }
+  }
+  input {
+    width: 32vw;
+    height: 6vh;
+    border: none;
+    background: none;
+    outline: none;
+    &::placeholder {
+      color: rgb(160, 160, 160);
+      font-size: 1.1vw;
+    }
+  }
+}
+
+#iconSet {
+  //   border: 1px solid red;
+  width: 8vw;
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 1.8vw;
+  }
+}

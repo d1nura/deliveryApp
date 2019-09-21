@@ -1,0 +1,49 @@
+.slider {
+  border: 1px solid rgb(0, 0, 0);
+  position: relative;
+  //   top: 10vh;
+  width: 100%;
+  height: 60vh;
+  border-radius: 2rem;
+  margin: 3vh 0 8vh 0;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+}
+
+#slide {
+  // border-radius: 2rem;
+  min-width: 100%;
+  min-height: 60vh;
+  // border: 1px solid red;
+  transition: 0.5s;
+  &:nth-child(1) {
+    background: url("../pics/delivery.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.dots {
+  // border: 1px solid blueviolet;
+  position: absolute;
+  width: 7vw;
+  height: 5vh;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#dot {
+  border: 2px solid white;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 10rem;
+  cursor: pointer;
+}

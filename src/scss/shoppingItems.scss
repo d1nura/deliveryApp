@@ -1,0 +1,126 @@
+.shoppingItems {
+  border: 0.1px solid rgb(231, 231, 231);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // background: beige;
+  // padding-bottom: 2vh;
+  img {
+    width: 100%;
+    // border: 1px solid red;
+  }
+  transition: 0.5s;
+  &:hover {
+    background: rgb(234, 255, 233);
+  }
+  cursor: pointer;
+}
+
+#itemPic {
+  // border: 1px solid rgb(212, 212, 212);
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 7vh;
+  margin: 2vh 0 2vh 0;
+}
+
+.itemDetails {
+  //   border: 1px solid red;
+  padding: 0 3vh 3vh 3vh;
+  // margin-top: 4vh;
+  input {
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    background: none;
+    border: 0.1px solid grey;
+    font-size: 1.1vw;
+    margin-right: 0.2vw;
+  }
+
+  .amount {
+    width: 35%;
+    display: flex;
+    select {
+      background: none;
+      border: none;
+      outline: none;
+      font-size: 1.1vw;
+      option {
+        background: rgb(234, 255, 233);
+      }
+    }
+  }
+  h3 {
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: rgb(59, 59, 59);
+    // text-align: center;
+  }
+  #addToCart {
+    position: relative;
+    background: none;
+    border: 0.5px solid rgb(0, 214, 18);
+    padding: 2vh;
+    border-radius: 0.4rem;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1vw;
+    letter-spacing: 0.2vw;
+    color: rgb(38, 165, 0);
+    transition: 0.2s;
+    &:hover {
+      background: rgb(0, 214, 18);
+      color: white;
+    }
+  }
+}
+
+#priceTag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //   border: 1px solid red;
+  h5 {
+    // border: 1px solid blue;
+    font-size: 1.4vw;
+    font-weight: 400;
+    span {
+      font-size: 1vw;
+    }
+  }
+  margin: 1vh 0 2vh 0;
+}
+
+.amountSelector {
+  // border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  button {
+    background: none;
+    border: 0.1px solid grey;
+    padding: 1vh;
+    font-size: 1vw;
+    width: 2vw;
+    outline: none;
+    cursor: pointer;
+    &:hover {
+      background: rgb(0, 214, 18);
+      color: white;
+      border: none;
+    }
+  }
+  p {
+    font-size: 1.1vw;
+  }
+}
