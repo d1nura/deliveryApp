@@ -1,0 +1,39 @@
+.viewItems {
+  position: relative;
+  padding: 5vh 2vh 2vh 2vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1vw;
+  #loading {
+    position: absolute;
+  }
+}
+
+#viewItem {
+  border-radius: 0.25rem;
+  position: relative;
+  border: 1px solid rgb(190, 190, 190);
+  //   margin: 1vh 0 1vh 0;
+  padding: 2vh;
+  span {
+    color: green;
+    font-size: 1.4vw;
+  }
+  p {
+    color: rgb(4, 23, 202);
+    font-size: 1.4vw;
+  }
+  #viewBtnSet {
+    margin: 1vh 1vh 0vh 0;
+    button {
+      font-size: 1vw;
+      padding: 0.2vh;
+      margin-right: 1vh;
+      width: 4vw;
+      cursor: pointer;
+      //   background: rgb(50, 1, 212);
+      //   color: white;
+      //   border: none;
+    }
+  }
+}

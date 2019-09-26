@@ -1,11 +1,8 @@
 import React from "react";
+import PublicDisplay from "./PublicDisplay";
 
 function Fruit() {
-  return (
-    <div className="fruit">
-      <h1>Fruit</h1>
-    </div>
-  );
+  return <PublicDisplay url="fruits" />;
 }
 
 export default Fruit;

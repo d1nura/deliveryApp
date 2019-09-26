@@ -1,11 +1,8 @@
 import React from "react";
+import PublicDisplay from "./PublicDisplay";
 
 function Vegetables() {
-  return (
-    <div className="vegetables">
-      <h1>Vegetables</h1>
-    </div>
-  );
+  return <PublicDisplay url="veg" />;
 }
 
-export default Vegetables;
+export default React.memo(Vegetables);

@@ -13,6 +13,13 @@ import sprite from "../pics/beverages/sprite.png";
 import pepsi from "../pics/beverages/pepsi.png";
 import mil from "../pics/beverages/mil.png";
 import "../scss/home.scss";
+import Slider from "./Slider";
+// import Nav from "./Nav";
+// import Vegetables from "./Vegetables";
+// import Fruit from "./Fruits";
+// import Drink from "./Drink";
+// import Other from "./Other";
+// import { Route } from "react-router-dom";
 
 function Home() {
   let vegArr = [
@@ -39,41 +46,45 @@ function Home() {
     }
   ];
   return (
-    <div className="home">
-      {vegArr.map((item, index) => {
-        return (
-          <ShoppingItems
-            key={index}
-            src={item.src}
-            title={item.title}
-            price={item.price}
-            selector={item.selector}
-          />
-        );
-      })}
-      {fruitArr.map((item, index) => {
-        return (
-          <ShoppingItems
-            key={index}
-            src={item.src}
-            title={item.title}
-            price={item.price}
-            selector={item.selector}
-          />
-        );
-      })}
-      {bevArr.map((item, index) => {
-        return (
-          <ShoppingItems
-            key={index}
-            src={item.src}
-            title={item.title}
-            price={item.price}
-            selector={item.selector}
-          />
-        );
-      })}
-    </div>
+    <React.Fragment>
+      <Slider />
+
+      <div className="home">
+        {vegArr.map((item, index) => {
+          return (
+            <ShoppingItems
+              key={index}
+              src={item.src}
+              title={item.title}
+              price={item.price}
+              selector={item.selector}
+            />
+          );
+        })}
+        {fruitArr.map((item, index) => {
+          return (
+            <ShoppingItems
+              key={index}
+              src={item.src}
+              title={item.title}
+              price={item.price}
+              selector={item.selector}
+            />
+          );
+        })}
+        {bevArr.map((item, index) => {
+          return (
+            <ShoppingItems
+              key={index}
+              src={item.src}
+              title={item.title}
+              price={item.price}
+              selector={item.selector}
+            />
+          );
+        })}
+      </div>
+    </React.Fragment>
   );
 }
 

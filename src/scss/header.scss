@@ -1,11 +1,8 @@
 header {
-  position: relative;
+  // position: fixed;
   width: 100%;
-  height: 14vh;
-  //   border: 1px solid red;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 10vh;
+  // border: 1px solid red;
 
   form {
     // border: 1px solid red;
@@ -21,10 +18,7 @@ header {
   }
   input {
     width: 32vw;
-    height: 6vh;
-    border: none;
-    background: none;
-    outline: none;
+    font-size: 1.2vw;
     &::placeholder {
       color: rgb(160, 160, 160);
       font-size: 1.1vw;
@@ -32,12 +26,12 @@ header {
   }
 }
 
-#iconSet {
-  //   border: 1px solid red;
-  width: 8vw;
-  display: flex;
-  justify-content: space-between;
-  img {
-    width: 1.8vw;
-  }
-}
+// #iconSet {
+//   //   border: 1px solid red;
+//   width: 8vw;
+//   display: flex;
+//   justify-content: space-between;
+//   img {
+//     width: 1.8vw;
+//   }
+// }

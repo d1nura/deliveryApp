@@ -1,0 +1,62 @@
+.addShpItems {
+  padding: 5vh 2vh 2vh 2vh;
+  h3 {
+    padding: 4vh 0 4vh 0;
+    font-size: 1.5vw;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 60vw;
+      margin-bottom: 2vh;
+      height: 8vh;
+      padding-left: 1vw;
+      border: 1px solid rgb(59, 167, 238);
+      font-size: 1.4vw;
+      border-radius: 0.2rem;
+    }
+    form-group {
+      //   border: 1px solid red;
+      width: 60vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2vh;
+      height: 8vh;
+      label {
+        font-size: 1.4vw;
+        margin-right: 2vw;
+        color: grey;
+        padding-left: 1vw;
+      }
+
+      select {
+        background: none;
+        border: 1px solid rgb(59, 167, 238);
+        padding-left: 1vw;
+        height: 5vh;
+        width: 10vw;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        border-radius: 0.2rem;
+      }
+    }
+  }
+}
+
+#submit {
+  background: none;
+  border: 3px solid rgb(59, 167, 238);
+  color: rgb(87, 87, 87);
+  text-align: center;
+  width: 12vw;
+  cursor: pointer;
+  padding: 0;
+  &:hover {
+    background: rgb(59, 167, 238);
+    color: white;
+  }
+}
